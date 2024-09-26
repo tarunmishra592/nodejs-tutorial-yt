@@ -5,6 +5,7 @@ const { registerValidation, loginValidation } = require('../middlewares/AuthVali
 const router = express.Router()
 
 
+
 router.post('/register', registerValidation, registerHandler)
 router.post('/login', loginValidation, loginHandler)
 
